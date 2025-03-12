@@ -8,9 +8,7 @@ def get_days_from_today(date):
         diff_day = current_date - get_date
         return diff_day.days
     except ValueError:
-        raise ValueError("Неправильний формат вхідних даних для дати. Необхідно ввести 'YYYY-MM-DD'")
+        return "Неправильний формат вхідних даних для дати. Необхідно ввести 'YYYY-MM-DD'"
 
 
-
-if __name__ == "__main__":
-    print(get_days_from_today("25-02-10"))
+print(get_days_from_today("2025-02-10"))
